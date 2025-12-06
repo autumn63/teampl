@@ -1,11 +1,11 @@
 [project]
-name = "practice"
+name = "teampl-hyenseok"
 version = "0.1.0"
-description = "Practice project with text, imag, audio, video branches"
+description = "teampl project with text, imag, audio, video branches"
 authors = [
     { name="Hyenseok", email="hyenseok44@gmail.com" }
 ]
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools","wheel"]
 build-backend = "setuptools.build_meta"
