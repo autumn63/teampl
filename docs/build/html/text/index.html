@@ -1,0 +1,156 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Branch &mdash; teampl 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            teampl
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../branches.html">Branches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">teampl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Text Branch</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/text/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="text-branch">
+<h1>Text Branch<a class="headerlink" href="#text-branch" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2>개요<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">text</span></code> 브랜치는 텍스트 데이터를 처리하고 분석하는 예제를 모아둔 브랜치입니다.
+예를 들어 간단한 텍스트 분류, 전처리, 토큰화 등의 기능을 연습하는 데 사용합니다.</p>
+</section>
+<section id="id2">
+<h2>폴더 구조<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">text/dataset/</span></code> : 실험에 사용한 텍스트 데이터가 저장된 폴더</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text/model.py</span></code> : 텍스트 분류 모델 클래스 정의</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text/train.py</span></code> : 모델 학습을 수행하는 스크립트</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text/inference.py</span></code> : 학습된 모델로 새 문장을 예측하는 스크립트</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>실행 방법<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>필요한 패키지 설치:</p>
+<p>pip install -r requirements.txt</p>
+</li>
+<li><p>학습 실행:</p>
+<p>cd text
+python train.py –epochs 10</p>
+</li>
+<li><p>추론 예시:</p>
+<p>python inference.py –input “이 영화 너무 재밌다”</p>
+</li>
+</ol>
+</section>
+<section id="id4">
+<h2>핵심 코드 설명<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">TextClassifier</span></code> 클래스
+- 문장을 벡터로 변환하고, 감정 레이블을 예측하는 모델입니다.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">preprocess(text)</span></code> 함수
+- 소문자 변환, 특수문자 제거 등 기본 전처리를 수행합니다.</p></li>
+</ul>
+<p>(필요하다면 autodoc 연동 예시):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">automodule</span><span class="p">::</span> <span class="n">text</span><span class="o">.</span><span class="n">model</span>
+   <span class="p">:</span><span class="n">members</span><span class="p">:</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>결과 예시<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>예시 문장: <code class="docutils literal notranslate"><span class="pre">&quot;이</span> <span class="pre">영화</span> <span class="pre">너무</span> <span class="pre">재밌다&quot;</span></code> → 예측 레이블: <code class="docutils literal notranslate"><span class="pre">positive</span></code></p></li>
+<li><p>테스트 데이터 기준 정확도: 약 0.87 (예시)</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, park hyenseok.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
