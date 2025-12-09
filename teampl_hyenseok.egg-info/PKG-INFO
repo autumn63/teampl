@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: teampl-hyenseok
+Version: 0.1.0
+Summary: teampl project with text, imag, audio, video branches
+Author-email: Hyenseok <hyenseok44@gmail.com>
+Project-URL: Homepage, https://github.com/autumn63/teampl
+Requires-Dist: opencv-python
+Requires-Dist: moviepy
+Requires-Dist: librosa
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: matplotlib
+Requires-Dist: soundfile

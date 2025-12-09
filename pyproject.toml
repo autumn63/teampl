@@ -6,6 +6,22 @@ authors = [
     { name="Hyenseok", email="hyenseok44@gmail.com" }
 ]
 
+dependencies = [
+  "opencv-python",
+  "moviepy",
+  "librosa",
+  "numpy",
+  "pillow",
+  "matplotlib",
+  "soundfile",
+]
+
 [build-system]
 requires = ["setuptools","wheel"]
 build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/autumn63/teampl"
+
+[tool.setuptools]
+packages = ["teampl"]

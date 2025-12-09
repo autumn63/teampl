@@ -45,16 +45,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="branches.html">Branches</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branches.html#text-branch">text branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branches.html#image-branch">image branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branches.html#audio-branch">audio branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branches.html#video-branch-preprocessing">video branch(preprocessing)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branches.html#video-branch-face-blur">video branch (face blur)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#example-module-lumache">Example Module: lumache</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#lumache.get_message"><code class="docutils literal notranslate"><span class="pre">get_message()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lumache.Calculator"><code class="docutils literal notranslate"><span class="pre">Calculator</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#lumache.Calculator.add"><code class="docutils literal notranslate"><span class="pre">Calculator.add()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#lumache.Calculator.multiply"><code class="docutils literal notranslate"><span class="pre">Calculator.multiply()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#example-module-lumache">Example Module: lumache</a></li>
 </ul>
 </li>
 </ul>
@@ -91,71 +88,6 @@
 나중에 text / imag / audio / video 브랜치의 실제 모듈들도 이곳에 추가할 수 있습니다.</p>
 <section id="example-module-lumache">
 <h2>Example Module: lumache<a class="headerlink" href="#example-module-lumache" title="Link to this heading"></a></h2>
-<dl class="py function">
-<dt class="sig sig-object py" id="lumache.get_message">
-<span class="sig-prename descclassname"><span class="pre">lumache.</span></span><span class="sig-name descname"><span class="pre">get_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#lumache.get_message" title="Link to this definition"></a></dt>
-<dd><p>사용자의 이름을 받아 인사 메시지를 반환합니다.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – 인사 메시지에 사용될 사용자 이름</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>인사 메시지 (예: “Hello, 석!”)</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="lumache.Calculator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lumache.</span></span><span class="sig-name descname"><span class="pre">Calculator</span></span><a class="headerlink" href="#lumache.Calculator" title="Link to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>간단한 사칙연산 계산기 클래스.</p>
-<p>이 클래스는 Sphinx autodoc의 클래스/메서드 문서화 예제를 보여주기 위한 것입니다.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="lumache.Calculator.add">
-<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#lumache.Calculator.add" title="Link to this definition"></a></dt>
-<dd><p>두 숫자를 더한 값을 반환합니다.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>a</strong> (<em>float</em>) – 첫 번째 숫자</p></li>
-<li><p><strong>b</strong> (<em>float</em>) – 두 번째 숫자</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>더한 값</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="lumache.Calculator.multiply">
-<span class="sig-name descname"><span class="pre">multiply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#lumache.Calculator.multiply" title="Link to this definition"></a></dt>
-<dd><p>두 숫자를 곱한 값을 반환합니다.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>a</strong> (<em>float</em>) – 첫 번째 숫자</p></li>
-<li><p><strong>b</strong> (<em>float</em>) – 두 번째 숫자</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>곱한 값</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
 </section>
 </section>
 
